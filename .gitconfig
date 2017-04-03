@@ -1,0 +1,29 @@
+[user]
+	name = Will Marquardt
+	email = wmarquardt@toutapp.com
+[core]
+  editor = atom -n -w
+	excludesfile = ~/dotfiles/.gitignore_global
+
+[push]
+  default = current
+[help]
+	# autocorrect = 1
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  amend = commit --amend --no-edit
+  mn = merge --no-edit
+  pn = pull --no-edit
+  pd = pull origin develop --no-edit
+  ddf = diff origin/develop

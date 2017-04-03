@@ -1,0 +1,40 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "3a708c8b-79eb-424d-a411-968461b2505c"
+    json:
+      indent_size: 2
+    ruby:
+      indent_size: 2
+  core:
+    disabledPackages: [
+      "autoclose-html"
+      "linter-rubocop"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 15
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
+  linter:
+    errorPanelHeight: 113
+  "linter-flow":
+    executablePath: "node_modules/.bin/flow"
+  "linter-rubocop":
+    command: "~/.rbenv/versions/2.0.0-p648/bin/rubocop"
+  "linter-ui-default": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "prettier-atom":
+    formatOnSaveOptions: {}
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
+  "todo-show": {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace: {}
