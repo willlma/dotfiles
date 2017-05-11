@@ -18,8 +18,7 @@
     tabType: "soft"
   "exception-reporting":
     userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
-  linter:
-    errorPanelHeight: 113
+  linter: {}
   "linter-flow":
     executablePath: "node_modules/.bin/flow"
   "linter-rubocop":
