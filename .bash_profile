@@ -99,3 +99,21 @@ pomo () {
 # }
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
 export PATH="/usr/local/sbin/:$PATH"
+
+# ToutApp
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export NVM_DIR="/Users/willmarquardt/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+. ~/.nvm/nvm.sh
+
+alias tout="cd ~/Documents/toutapp/tout"
+alias tnext="cd ~/Documents/toutapp/tout-next"
+alias tlinker="cd ~/Documents/toutapp/linker"
+alias tadmin="cd ~/Documents/toutapp/tout-admin"
+alias tbm="cd ~/Documents/toutapp/tout-burning-man"
+alias tui="cd ~/Documents/toutapp/ui-components"
+alias tchrome="cd ~/Documents/toutapp/chrome-extension"
+alias tsync="cd ~/Documents/toutapp/sync"
