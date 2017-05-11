@@ -97,7 +97,7 @@ pomo () {
 #   git commit -am $branch
 #   git push -u
 # }
-
+export PYTHONSTARTUP=~/dotfiles/.pythonrc
 export PATH="/usr/local/sbin/:$PATH"
 
 # ToutApp
