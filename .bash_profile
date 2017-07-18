@@ -83,10 +83,13 @@ cmp () {
 
 pomo () {
   killall Franz
+  osascript -e 'quit app "Microsoft Outlook"'
   if [ $# -eq 0 ]; then time=1500; else let time=$1*60; fi
   sleep $time
   open -g -a Franz
+  open -g -a "Microsoft Outlook"
   osascript -e 'tell application "System Events" to tell process "Franz" to set visible to false'
+  osascript -e 'tell application "System Events" to tell process "Microsoft Outlook" to set visible to false'
 }
 
 # push () {
@@ -98,22 +101,26 @@ pomo () {
 #   git push -u
 # }
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
-export PATH="/usr/local/sbin/:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
 
 # ToutApp
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-export NVM_DIR="/Users/willmarquardt/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-. ~/.nvm/nvm.sh
+# export NVM_DIR="~/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# . ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
-alias tout="cd ~/Documents/toutapp/tout"
-alias tnext="cd ~/Documents/toutapp/tout-next"
-alias tlinker="cd ~/Documents/toutapp/linker"
-alias tadmin="cd ~/Documents/toutapp/tout-admin"
-alias tbm="cd ~/Documents/toutapp/tout-burning-man"
-alias tui="cd ~/Documents/toutapp/ui-components"
-alias tchrome="cd ~/Documents/toutapp/chrome-extension"
-alias tsync="cd ~/Documents/toutapp/sync"
+alias tout="cd ~/toutapp/tout"
+alias tnext="cd ~/toutapp/tout-next"
+alias tlinker="cd ~/toutapp/linker"
+alias tadmin="cd ~/toutapp/tout-admin"
+alias tbm="cd ~/toutapp/tout-burning-man"
+alias tui="cd ~/toutapp/ui-components"
+alias toffice="cd ~/toutapp/office-365"
+alias ttable="cd ~/toutapp/tout-table"
+alias tchrome="cd ~/toutapp/chrome-extension"
+alias tsync="cd ~/toutapp/sync"

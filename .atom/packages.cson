@@ -14,6 +14,7 @@ packages: [
   "linter-eslint"
   "linter-rubocop"
   "linter-ui-default"
+  "markdown-preview-plus"
   "package-sync"
   "prettier-atom"
   "sublime-block-comment"
