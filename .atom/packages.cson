@@ -12,6 +12,7 @@ packages: [
   "last-cursor-position"
   "linter"
   "linter-eslint"
+  "linter-flow"
   "linter-rubocop"
   "linter-ui-default"
   "package-sync"
