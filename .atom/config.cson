@@ -18,11 +18,13 @@
   "exception-reporting":
     userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
   linter: {}
+  "linter-eslint": {}
   "linter-flow":
     executablePath: "node_modules/.bin/flow"
   "linter-rubocop":
     command: "~/.rbenv/versions/2.0.0-p648/bin/rubocop"
   "linter-ui-default": {}
+  "markdown-preview-plus": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true
