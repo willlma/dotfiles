@@ -18,6 +18,7 @@ packages: [
   "markdown-preview-plus"
   "package-sync"
   "prettier-atom"
+  "project-switcher2"
   "sublime-block-comment"
   "todo-show"
 ]

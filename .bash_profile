@@ -101,7 +101,7 @@ pomo () {
 #   git push -u
 # }
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
-# export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 # ToutApp
 
@@ -114,6 +114,8 @@ eval "$(rbenv init -)"
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
+
 alias tout="cd ~/toutapp/tout"
 alias tnext="cd ~/toutapp/tout-next"
 alias tlinker="cd ~/toutapp/linker"
@@ -122,5 +124,6 @@ alias tbm="cd ~/toutapp/tout-burning-man"
 alias tui="cd ~/toutapp/ui-components"
 alias toffice="cd ~/toutapp/office-365"
 alias ttable="cd ~/toutapp/tout-table"
+alias tlang="cd ~/toutapp/tout-languages"
 alias tchrome="cd ~/toutapp/chrome-extension"
 alias tsync="cd ~/toutapp/sync"
