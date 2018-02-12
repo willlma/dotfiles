@@ -81,25 +81,6 @@ cmp () {
   git push -u
 }
 
-pomo () {
-  killall Franz
-  osascript -e 'quit app "Microsoft Outlook"'
-  if [ $# -eq 0 ]; then time=1500; else let time=$1*60; fi
-  sleep $time
-  open -a /Applications/Franz.app --hide
-  open -g -a "Microsoft Outlook"
-  osascript -e 'tell application "System Events" to tell process "Franz" to set visible to false'
-  osascript -e 'tell application "System Events" to tell process "Microsoft Outlook" to set visible to false'
-}
-
-# push () {
-#   branch=$(git rev-parse --abbrev-ref HEAD)
-#   if git rev-parse @{u}; then
-#     message = $(git log --oneline -1 --pretty=%B)
-#     git pull
-#   git commit -am $branch
-#   git push -u
-# }
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
 export PATH="/usr/local/sbin:$PATH"
 
@@ -108,9 +89,6 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# export NVM_DIR="~/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# . ~/.nvm/nvm.sh
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
@@ -127,3 +105,6 @@ alias ttable="cd ~/toutapp/tout-table"
 alias tlang="cd ~/toutapp/tout-languages"
 alias tchrome="cd ~/toutapp/chrome-extension"
 alias tsync="cd ~/toutapp/sync"
+
+alias pomo="~/dotfiles/scripts/pomo.sh"
+alias stage="~/dotfiles/scripts/stage.sh"
