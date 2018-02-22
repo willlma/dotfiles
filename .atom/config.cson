@@ -5,6 +5,7 @@
     ]
     telemetryConsent: "limited"
   editor:
+    fontSize: 15
     showInvisibles: true
     tabType: "soft"
   "exception-reporting":

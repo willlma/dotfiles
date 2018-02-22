@@ -9,3 +9,4 @@ if [[ $branch == "develop" || $branch == "master" ]]; then
 fi
 if [ $# -eq 0 ]; then message=$branch; else message=$1; fi
 git commit -am "$message"
+git push -u
