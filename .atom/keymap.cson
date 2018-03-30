@@ -18,7 +18,10 @@
   # 'tab': 'editor:indent-selected-rows'
   'cmd-alt-/': 'sublime-block-comment:toggle'
   'cmd-shift-backspace': 'editor:delete-line'
-  'cmd-| cmd-c': 'editor:copy-project-path'
+
+'.tree-view':
+  'ctrl-shift-C': 'tree-view:copy-full-path'
+  'cmd-c': 'tree-view:copy-project-path'
 #
 # 'atom-workspace':
 #   'ctrl-shift-p': 'core:move-up'

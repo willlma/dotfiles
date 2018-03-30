@@ -48,6 +48,7 @@ alias ttable="cd ~/toutapp/tout-table"
 alias tlang="cd ~/toutapp/tout-languages"
 alias tchrome="cd ~/toutapp/chrome-extension"
 alias tsync="cd ~/toutapp/sync"
+alias tmem="cd ~/toutapp/membrane"
 
 alias pomo="~/dotfiles/scripts/pomo.sh"
 alias stage="~/dotfiles/scripts/stage.sh"
