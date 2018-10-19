@@ -43,3 +43,6 @@
 
 'body':
   'alt-cmd-w': 'pane:close-other-items'
+
+'.platform-darwin atom-workspace':
+  'ctrl-shift-T': 'todo-show:toggle'

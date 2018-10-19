@@ -75,6 +75,12 @@
     'prefix': 'pv'
     'body': 'print "$1 %s" % $1'
 
+# markdown
+'.source.gfm':
+  'checkbox':
+    'prefix': '[]'
+    'body': '- [ ] '
+
 'defsearch':
   'prefix': 'defsearch'
   'body': 'def (self\.)?'

@@ -1,20 +1,68 @@
 "*":
+  "atom-ide-ui":
+    hyperclick:
+      darwinTriggerKeys: "altKey,metaKey"
+    use:
+      "atom-ide-busy-signal": "default"
+      "atom-ide-code-actions": "default"
+      "atom-ide-code-format": "default"
+      "atom-ide-code-highlight": "default"
+      "atom-ide-console": "default"
+      "atom-ide-datatip": "default"
+      "atom-ide-debugger": "default"
+      "atom-ide-definitions": "default"
+      "atom-ide-diagnostics": "default"
+      "atom-ide-diagnostics-ui": "default"
+      "atom-ide-find-references": "default"
+      "atom-ide-global": "default"
+      "atom-ide-outline-view": "default"
+      "atom-ide-signature-help": "default"
+      "atom-ide-terminal": "default"
+      hyperclick: "default"
   core:
     disabledPackages: [
-      "linter-rubocop"
+      "linter-flow"
+      "busy-signal"
+      "flow-ide"
+      "goto-definition"
+      "hyperclick"
+      "intentions"
+      "linter"
+      "linter-ui-default"
+    ]
+    packagesWithKeymapsDisabled: [
+      "todo-show"
     ]
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
-    fontSize: 15
+    fontSize: 16
     showInvisibles: true
     tabType: "soft"
   "exception-reporting":
-    userId: "d26155d0-ddaf-47b4-801e-f1dc70922aaf"
-  "linter-ui-default":
-    panelHeight: 69
+    userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
+  "highlight-selected": {}
+  linter: {}
+  "linter-eslint": {}
+  "linter-flow":
+    executablePath: "node_modules/.bin/flow"
+  "linter-rubocop": {}
+  "linter-ui-default": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "markdown-preview-plus": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   "prettier-atom":
     formatOnSaveOptions: {}
+    prettierEslintOptions:
+      prettierLast: true
     prettierOptions:
+      arrowParens: "always"
       jsxBracketSameLine: true
       singleQuote: true
     useEslint: true
@@ -24,3 +72,7 @@
     enableMruTabSwitching: false
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "wrap-with-anything":
+    chars: "*~/_{"

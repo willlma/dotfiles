@@ -12,9 +12,15 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR=Atom
 export ANDROID_HOME=~/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
 la () {
   ls -GFha $1
+}
+to-anki () {
+  cd ~/projects/
+  cd $1
+  cd ..
 }
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -25,30 +31,7 @@ fi
 PROMPT_COMMAND='update_terminal_cwd ; if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/Dropbox/config/logs/bash-history-$(date "+%Y-W%V").log; fi;'
 
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
-export PATH="/usr/local/sbin:$PATH"
-
-# ToutApp
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
-
-alias tout="cd ~/toutapp/tout"
-alias tnext="cd ~/toutapp/tout-next"
-alias tlinker="cd ~/toutapp/linker"
-alias tadmin="cd ~/toutapp/tout-admin"
-alias tbm="cd ~/toutapp/tout-burning-man"
-alias tui="cd ~/toutapp/ui-components"
-alias toffice="cd ~/toutapp/office-365"
-alias ttable="cd ~/toutapp/tout-table"
-alias tlang="cd ~/toutapp/tout-languages"
-alias tchrome="cd ~/toutapp/chrome-extension"
-alias tsync="cd ~/toutapp/sync"
-alias tmem="cd ~/toutapp/membrane"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 alias pomo="~/dotfiles/scripts/pomo.sh"
 alias stage="~/dotfiles/scripts/stage.sh"
