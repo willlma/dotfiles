@@ -27,8 +27,9 @@
       "goto-definition"
       "hyperclick"
       "intentions"
-      "linter"
-      "linter-ui-default"
+      "atom-ide-ui"
+      "language-javascript"
+      "language-typescript"
     ]
     packagesWithKeymapsDisabled: [
       "todo-show"
@@ -39,18 +40,21 @@
       "one-light-syntax"
     ]
   editor:
-    fontSize: 16
     showInvisibles: true
     tabType: "soft"
   "exception-reporting":
     userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
   "highlight-selected": {}
+  "language-babel":
+    emmetCSSAutocomplete: true
   linter: {}
   "linter-eslint": {}
   "linter-flow":
     executablePath: "node_modules/.bin/flow"
   "linter-rubocop": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 19
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
   "markdown-preview-plus": {}

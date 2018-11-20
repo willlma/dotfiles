@@ -39,3 +39,5 @@ alias cmp="~/dotfiles/scripts/cmp.sh"
 alias branchd="~/dotfiles/scripts/branchd.sh"
 alias lg="~/dotfiles/scripts/lg.sh"
 alias hg="history | grep"
+
+HEROKU_AC_BASH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;

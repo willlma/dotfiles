@@ -18,8 +18,12 @@ packages: [
   "linter-flow"
   "linter-rubocop"
   "linter-ui-default"
+  "nice-index"
   "package-sync"
   "prettier-atom"
+  "rubocop-auto-correct"
+  "seti-icons"
+  "sort-lines"
   "sublime-block-comment"
   "todo-show"
 ]
