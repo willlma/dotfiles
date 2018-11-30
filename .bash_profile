@@ -36,7 +36,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 alias pomo="~/dotfiles/scripts/pomo.sh"
 alias stage="~/dotfiles/scripts/stage.sh"
 alias cmp="~/dotfiles/scripts/cmp.sh"
-alias branchd="~/dotfiles/scripts/branchd.sh"
+alias branchm="~/dotfiles/scripts/branchm.sh"
 alias lg="~/dotfiles/scripts/lg.sh"
 alias hg="history | grep"
 

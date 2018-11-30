@@ -27,5 +27,6 @@
   amend = commit --amend --no-edit
   mn = merge --no-edit
   pn = pull --no-edit
-  pd = pull origin develop --no-edit
-  ddf = diff origin/develop
+  cn = commit --no-edit
+  pm = pull origin master --no-edit
+  dm = diff origin/master
