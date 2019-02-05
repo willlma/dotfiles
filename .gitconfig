@@ -1,6 +1,6 @@
 [user]
   name = Will Marquardt
-  email = wmarquardt@toutapp.com
+	email = wmarquardt@gmail.com
 [core]
   editor = atom -n -w
   excludesfile = ~/dotfiles/.gitignore_global

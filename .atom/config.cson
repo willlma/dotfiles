@@ -54,7 +54,6 @@
   "linter-rubocop": {}
   "linter-ui-default":
     panelHeight: 19
-    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
   "markdown-preview-plus": {}
@@ -80,3 +79,6 @@
     ignoreWhitespaceOnCurrentLine: false
   "wrap-with-anything":
     chars: "*~/_{"
+".html.ruby.text":
+  editor:
+    showIndentGuide: false

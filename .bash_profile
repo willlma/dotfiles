@@ -33,11 +33,13 @@ PROMPT_COMMAND='update_terminal_cwd ; if [ "$(id -u)" -ne 0 ]; then echo "$(date
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-alias pomo="~/dotfiles/scripts/pomo.sh"
-alias stage="~/dotfiles/scripts/stage.sh"
+chmod -R u+x ~/dotfiles/scripts/
+alias branchd="~/dotfiles/scripts/branchd.sh"
 alias cmp="~/dotfiles/scripts/cmp.sh"
-alias branchm="~/dotfiles/scripts/branchm.sh"
 alias lg="~/dotfiles/scripts/lg.sh"
+alias pomo="~/dotfiles/scripts/pomo.sh"
+alias prod_dump="~/dotfiles/scripts/prod_dump.sh"
+alias stage="~/dotfiles/scripts/stage.sh"
 alias hg="history | grep"
 
 HEROKU_AC_BASH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
