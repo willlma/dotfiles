@@ -1,4 +1,5 @@
 branch=$(git rev-parse --abbrev-ref HEAD)
+git pull
 if [[ $branch == "develop" || $branch == "master" ]]; then
   read -p "You're on $branch branch. Sure you want to do this?" -n 1 -r
   echo    # (optional) move to a new line

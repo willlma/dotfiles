@@ -30,3 +30,7 @@
   cn = commit --no-edit
   pm = pull origin master --no-edit
   dm = diff origin/master
+[branch]
+	# autoSetupMerge = always
+[rerere]
+	enabled = true

@@ -19,17 +19,25 @@
       "atom-ide-signature-help": "default"
       "atom-ide-terminal": "default"
       hyperclick: "default"
+  "atom-ternjs":
+    caseInsensitive: false
+    useSnippets: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    useAlternateScoring: false
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   core:
     disabledPackages: [
       "linter-flow"
       "busy-signal"
       "flow-ide"
       "goto-definition"
-      "hyperclick"
       "intentions"
       "atom-ide-ui"
       "language-javascript"
       "language-typescript"
+      "hard-wrap"
     ]
     packagesWithKeymapsDisabled: [
       "todo-show"
@@ -44,7 +52,13 @@
     tabType: "soft"
   "exception-reporting":
     userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
-  "highlight-selected": {}
+  "highlight-selected":
+    highlightBackground: true
+    lightTheme: true
+    onlyHighlightWholeWords: false
+    showResultsOnScrollBar: true
+  hyperclick:
+    darwinTriggerKeys: "altKey,metaKey"
   "language-babel":
     emmetCSSAutocomplete: true
   linter: {}
@@ -53,9 +67,12 @@
     executablePath: "node_modules/.bin/flow"
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 19
-  "markdown-preview":
-    breakOnSingleNewline: true
+    alwaysTakeMinimumSpace: true
+    decorateOnTreeView: "Files and Directories"
+    panelHeight: 169
+    panelRepresents: "Entire Project"
+    tooltipFollows: "Keyboard"
+  "markdown-preview": {}
   "markdown-preview-plus": {}
   "package-sync":
     createOnChange: true
@@ -71,8 +88,12 @@
     useEslint: true
   tabs:
     addNewTabsAtEnd: true
-    alwaysShowTabBar: false
     enableMruTabSwitching: false
+  "todo-show": {}
+  "tree-view":
+    alwaysOpenExisting: true
+    hideIgnoredNames: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
   whitespace:

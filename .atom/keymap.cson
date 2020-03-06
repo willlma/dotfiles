@@ -10,8 +10,9 @@
 #
 # Here's an example taken from Atom's built-in keymap:
 #
-# 'atom-text-editor':
-#   'enter': 'editor:newline'
+'atom-text-editor':
+  'ctrl-s': 'bracket-matcher:select-matching-brackets'
+
 'atom-workspace atom-text-editor:not([mini])':
   'alt-down': 'editor:move-line-down'
   'alt-up': 'editor:move-line-up'
