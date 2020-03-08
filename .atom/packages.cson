@@ -1,11 +1,13 @@
 packages: [
   "atom-ide-ui"
+  "atom-ternjs"
   "autocomplete-html-entities"
   "blame"
   "busy-signal"
   "copy-with-syntax"
   "flow-ide"
   "goto-definition"
+  "hard-wrap"
   "highlight-selected"
   "hyperclick"
   "ide-flowtype"

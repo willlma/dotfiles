@@ -1,6 +1,6 @@
 [user]
   name = Will Marquardt
-  email = wmarquardt@toutapp.com
+	email = wmarquardt@gmail.com
 [core]
   editor = atom -n -w
   excludesfile = ~/dotfiles/.gitignore_global
@@ -30,3 +30,7 @@
   cn = commit --no-edit
   pm = pull origin master --no-edit
   dm = diff origin/master
+[branch]
+	# autoSetupMerge = always
+[rerere]
+	enabled = true

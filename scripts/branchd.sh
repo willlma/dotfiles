@@ -1,4 +1,4 @@
 branch=$(git rev-parse --abbrev-ref HEAD)
-git checkout develop
+git checkout master
 git pull
 git branch -d $branch

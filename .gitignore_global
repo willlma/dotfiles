@@ -1,5 +1,4 @@
 *Procfile
-*.rubocop.yml
 *stop-foreman
 *core_unicorn.cfg
 *.nvmrc
