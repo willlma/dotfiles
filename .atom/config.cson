@@ -30,6 +30,7 @@
       "atom-ide-ui"
       "language-javascript"
       "language-typescript"
+      "linter-rubocop"
     ]
     packagesWithKeymapsDisabled: [
       "todo-show"
@@ -44,7 +45,13 @@
     tabType: "soft"
   "exception-reporting":
     userId: "699ddf69-2b01-49b0-a969-d7aad520e26b"
-  "highlight-selected": {}
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    highlightBackground: true
+    lightTheme: true
+    minimumLength: 1
+    onlyHighlightWholeWords: false
+    showResultsOnScrollBar: true
   "language-babel":
     emmetCSSAutocomplete: true
   linter: {}

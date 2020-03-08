@@ -26,9 +26,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-# ulimit -n 10000 #Need this for brunch otherwise we get a 'too many open files' error
 # update_terminal_cwd is the default command
-PROMPT_COMMAND='update_terminal_cwd ; if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/Dropbox/config/logs/bash-history-$(date "+%Y-W%V").log; fi;'
+PROMPT_COMMAND="$PROMPT_COMMAND; if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/Dropbox/config/logs/bash-history-$(date "+%Y-W%V").log; fi;"
 
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
