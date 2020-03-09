@@ -32,6 +32,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 chmod -R u+x ~/dotfiles/scripts/
 alias branchd="~/dotfiles/scripts/branchd.sh"
 alias cmp="~/dotfiles/scripts/cmp.sh"
+alias note="~/dotfiles/scripts/note.sh"
 alias lg="~/dotfiles/scripts/lg.sh"
 alias pomo="~/dotfiles/scripts/pomo.sh"
 alias prod_dump="~/dotfiles/scripts/prod_dump.sh"
