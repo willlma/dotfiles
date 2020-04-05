@@ -13,17 +13,17 @@ continue=false
 text=$1
 echo $text
 
-while getopts ht: opt ${@:2}; do
+while getopts hct: opt ${@:2}; do
   case $opt in
     h) usage;;
-    d) continue=true;;
+    c) continue=true;;
     t) title=$OPTARG;;
     * ) usage
   esac
 done
 
 now=$(date "+%Y%m%d_%H%M")
-filename=~/Dropbox/Notes/"${now}_${title}.txt"
+filename=~/Dropbox/Notes/"${now}_${title}.md"
 echo $text > $filename
 echo $filename
 

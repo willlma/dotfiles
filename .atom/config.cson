@@ -19,6 +19,9 @@
       "atom-ide-signature-help": "default"
       "atom-ide-terminal": "default"
       hyperclick: "default"
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   core:
     disabledPackages: [
       "linter-flow"
@@ -41,6 +44,7 @@
       "one-light-syntax"
     ]
   editor:
+    fontSize: 16
     showInvisibles: true
     tabType: "soft"
   "exception-reporting":
@@ -60,7 +64,7 @@
     executablePath: "node_modules/.bin/flow"
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 19
+    panelHeight: 194
     showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
