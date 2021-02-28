@@ -38,7 +38,7 @@ else
   filename="$NOTES_DIRECTORY${now}_${title}.md"
 fi
 
-echo $text >> $filename
+echo $text >> "$filename"
 echo $filename
 
 if $continue; then
@@ -46,5 +46,5 @@ if $continue; then
 fi
 
 if command -v termux-open; then
-  termux-open $filename
+  termux-open "$filename"
 fi
