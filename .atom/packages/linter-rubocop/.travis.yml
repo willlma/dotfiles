@@ -1,0 +1,93 @@
+### Project specific config ###
+language: ruby
+rvm: 2.3.1
+os: linux
+install:
+  - gem install --no-document rubocop
+
+jobs:
+  include:
+    # Test Atom versions
+    - stage: test
+      name: "Atom stable with latest Rubocop"
+      env: ATOM_CHANNEL=stable
+
+    - stage: test
+      name: "Atom stable with Rubocop < 0.52.0"
+      env: ATOM_CHANNEL=stable
+      install:
+        - gem install --no-document rubocop -v '< 0.52.0'
+
+    - stage: test
+      name: "Atom beta with latest Rubocop"
+      env: ATOM_CHANNEL=beta
+
+    - stage: test
+      name: "Atom beta with Rubocop < 0.52.0"
+      env: ATOM_CHANNEL=beta
+      install:
+        - gem install --no-document rubocop -v '< 0.52.0'
+
+    # Check the commit messages
+    - stage: test
+      # commitlint requires a current version of Node.js
+      language: node_js
+      node_js: lts/*
+      before_script: skip
+      install:
+        - npm install
+      script:
+        - commitlint-travis
+
+    - stage: release
+      # Semantic-release requires a current version of Node.js
+      language: node_js
+      node_js: lts/*
+      # Since the deploy needs APM, currently the simplest method is to run
+      # build-package.sh, which requires the specs to pass.
+      before_deploy:
+        - export PATH=${PATH}:${HOME}/atom/usr/bin/
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
+
+before_script:
+  - rubocop --version
+
+### Generic setup follows ###
+script:
+  - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
+  - chmod u+x build-package.sh
+  - "./build-package.sh"
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+branches:
+  only:
+    - master
+
+git:
+  depth: 10
+
+dist: xenial
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - build-essential
+    - fakeroot
+    - git
+    - libsecret-1-dev
+    - libgconf-2-4
+
+stages:
+  - test
+  - name: release
+    if: (NOT type = pull_request) AND branch = master

@@ -1,0 +1,57 @@
+{
+  "_from": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball",
+  "_id": "sublime-block-comment@0.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-YDjf0dHtWEcNHLQ7/v99iqBB6D8d3KY6X9ckI4oBqooprfhm2FavSo3X7QCm0N5vnuIEiIXxISvvDz30eVzjaQ==",
+  "_location": "/sublime-block-comment",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball",
+  "_shasum": "8be61ac7e0a3f9d84f3ea05b521eb31586cc0f02",
+  "_spec": "https://www.atom.io/api/packages/sublime-block-comment/versions/0.5.1/tarball",
+  "_where": "/private/var/folders/nn/myxt4nl515b6qgmgrcgf4nxw0000gp/T/apm-install-dir-118919-3480-1mkc7kq.asyy",
+  "activationCommands": {
+    "atom-text-editor:not([mini])": [
+      "sublime-block-comment:toggle"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/UltCombo/atom-sublime-block-comment/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "core-js": "^1.2.0"
+  },
+  "deprecated": false,
+  "description": "Toggle block comments like in Sublime Text.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/UltCombo/atom-sublime-block-comment#readme",
+  "keywords": [
+    "block",
+    "comment",
+    "block-comment",
+    "sublime",
+    "text",
+    "sublime-text"
+  ],
+  "license": "MIT",
+  "main": "./lib/sublime-block-comment",
+  "name": "sublime-block-comment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UltCombo/atom-sublime-block-comment.git"
+  },
+  "version": "0.5.1"
+}

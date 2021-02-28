@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball",
+  "_id": "nice-index@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-qai8OagBZ1sUptCNwb0OBHaBAOS3esBYHaXrjqMz9H+eRXCj6vNNqxWZNdT9CIpdtGwVDDBBc8jXMf5/2Vt/jA==",
+  "_location": "/nice-index",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball",
+  "_shasum": "00a6f7c6f696b8e613b0cac1bbe42dd58cdcc495",
+  "_spec": "https://www.atom.io/api/packages/nice-index/versions/1.0.5/tarball",
+  "_where": "/private/var/folders/nn/myxt4nl515b6qgmgrcgf4nxw0000gp/T/apm-install-dir-118929-79459-azbub2.cgpop",
+  "author": {
+    "name": "Joshua Comeau"
+  },
+  "bugs": {
+    "url": "https://github.com/joshwcomeau/nice-index/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Show directory names instead of `index.js`.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/joshwcomeau/nice-index",
+  "keywords": [
+    "atom",
+    "tabs",
+    "rename",
+    "title",
+    "filename",
+    "pane",
+    "index",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "./lib/nice-index",
+  "name": "nice-index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshwcomeau/nice-index.git"
+  },
+  "version": "1.0.5"
+}

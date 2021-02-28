@@ -1,8 +1,8 @@
 [user]
-  name = Will Marquardt
+	name = Will Marquardt
 	email = wmarquardt@gmail.com
 [core]
-  editor = atom -n -w
+  editor = code -w
   excludesfile = ~/dotfiles/.gitignore_global
   mergeoptions = --no-edit
 [pull]

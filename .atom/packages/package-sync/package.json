@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball",
+  "_id": "package-sync@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-XvAv4swXq8ja+WZH+9HwrwY+WbzcW93p6t85qXQdYx5Gw7zjJiSa++296kNQ95AosCiIkfjN02+C1uFBr2ibpA==",
+  "_location": "/package-sync",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball",
+  "_shasum": "b5eb03d3f1cdc51fe3284dbb68e6015cfd8bd8f3",
+  "_spec": "https://www.atom.io/api/packages/package-sync/versions/1.1.0/tarball",
+  "_where": "/private/var/folders/nn/myxt4nl515b6qgmgrcgf4nxw0000gp/T/apm-install-dir-118919-2279-123r170.p9oq",
+  "author": {
+    "name": "Lee Dohm",
+    "email": "lee@lee-dohm.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lee-dohm/package-sync/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "season": "^5.2.0"
+  },
+  "deprecated": false,
+  "description": "Synchronizes packages installed between computers",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/lee-dohm/package-sync#readme",
+  "keywords": [
+    "package",
+    "installation",
+    "synchronization"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "name": "package-sync",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lee-dohm/package-sync.git"
+  },
+  "version": "1.1.0"
+}

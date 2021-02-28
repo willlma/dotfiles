@@ -1,0 +1,92 @@
+{
+  "_from": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball",
+  "_id": "rubocop-auto-correct@1.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-lDZYd9HacpYxU9TC8WJPSy+eY3qyMpyJanWgMZP1J4f0AufFIGJG53neix0IiuGaAPGTotXh1T1on7VDrktQww==",
+  "_location": "/rubocop-auto-correct",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball",
+  "_shasum": "33040712ba4e54a5e012cbfb23581d72bcec9b57",
+  "_spec": "https://www.atom.io/api/packages/rubocop-auto-correct/versions/1.5.1/tarball",
+  "_where": "/private/var/folders/nn/myxt4nl515b6qgmgrcgf4nxw0000gp/T/apm-install-dir-118106-12769-y3z9pd.dsqu",
+  "activationCommands": {
+    "atom-workspace": "rubocop-auto-correct:current-file"
+  },
+  "bugs": {
+    "url": "https://github.com/tomoya/rubocop-auto-correct/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "rubocopCommandPath": {
+      "order": 1,
+      "description": "If the command does not work, please input rubocop full path here. Example: /Users/<username>/.rbenv/shims/rubocop)",
+      "type": "string",
+      "default": "rubocop"
+    },
+    "autoRun": {
+      "order": 2,
+      "description": "When you save the buffer, automatically it runs Rubocop auto correct. You need to run manually once at window before you use the option.",
+      "type": "boolean",
+      "default": false
+    },
+    "notification": {
+      "order": 3,
+      "description": "When this option is disabled, you do not receive any notifications even thought a file is corrected.",
+      "type": "boolean",
+      "default": true
+    },
+    "onlyFixesNotification": {
+      "order": 4,
+      "description": "When this option is disabled, you will get all rubocop notifications appeared.",
+      "type": "boolean",
+      "default": true
+    },
+    "correctFile": {
+      "order": 5,
+      "description": "You can correct a file directly if you enable this option. You do not need to save file after correcting it.",
+      "type": "boolean",
+      "default": false
+    },
+    "debugMode": {
+      "order": 6,
+      "description": "You can get log on console panel if you enable this option.",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "dependencies": {
+    "fs-plus": "2.x",
+    "temp": "^0.8.3",
+    "which": "^1.1.1"
+  },
+  "deprecated": false,
+  "description": "Auto-correct ruby source code by using rubocop in Atom",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/tomoya/rubocop-auto-correct#readme",
+  "keywords": [
+    "ruby",
+    "rubocop",
+    "refactoring"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "rubocop-auto-correct",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomoya/rubocop-auto-correct.git"
+  },
+  "version": "1.5.1"
+}

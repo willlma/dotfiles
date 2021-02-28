@@ -1,0 +1,56 @@
+{
+  "_from": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball",
+  "_id": "dark-mode@4.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-dbl6VQs9/7vv1A1sYAyvQg7D2bHZuCZ+jM3TSsZt8PDuS4uPVqQ8VVndfLCgbWqyQ4Mt11m2PZ9smEK2DYNNNA==",
+  "_location": "/dark-mode",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball",
+  "_shasum": "a9d2d49240fea53216e8918172c4e9ca01554a9e",
+  "_spec": "https://www.atom.io/api/packages/dark-mode/versions/4.0.2/tarball",
+  "_where": "/private/var/folders/nn/myxt4nl515b6qgmgrcgf4nxw0000gp/T/apm-install-dir-120313-11549-scv6jo.162c",
+  "activationCommands": {},
+  "author": {
+    "name": "Exelord"
+  },
+  "bugs": {
+    "url": "https://github.com/exelord/dark-mode/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash.throttle": "^4.0.8",
+    "node-schedule": "^1.3.1",
+    "suncalc": "^1.8.0"
+  },
+  "deprecated": false,
+  "description": "Automatically switch between dark mode and light mode thanks to your light sensor or just change your mood switching between your favorites themes.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/exelord/dark-mode#readme",
+  "keywords": [
+    "dark mode",
+    "themes",
+    "switch",
+    "atom"
+  ],
+  "license": "MIT",
+  "main": "./lib/dark-mode",
+  "name": "dark-mode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exelord/dark-mode.git"
+  },
+  "version": "4.0.2"
+}
