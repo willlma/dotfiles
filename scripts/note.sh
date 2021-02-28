@@ -27,15 +27,15 @@ while getopts hct: opt ${@:2}; do
 done
 
 set_filename () {
-  filename=$NOTES_DIRECTORY"${now}_${title}.md"
+  filename="$NOTES_DIRECTORY${now}_${title}.md"
 }
 
 if [ -z "$title" ]; then
   now=$(date "+%Y%m%d")
-  filename=$NOTES_DIRECTORY"${now}.md"
+  filename="$NOTES_DIRECTORY${now}.md"
 else
   now=$(date "+%Y%m%d_%H%M")
-  filename=$NOTES_DIRECTORY"${now}_${title}.md"
+  filename="$NOTES_DIRECTORY${now}_${title}.md"
 fi
 
 echo $text >> $filename
@@ -46,5 +46,5 @@ if $continue; then
 fi
 
 if command -v termux-open; then
-  termux-open $NOTES_DIRECTORY $filename
+  termux-open $filename
 fi
