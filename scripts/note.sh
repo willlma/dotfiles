@@ -8,10 +8,24 @@ usage () {
   echo -e "\nUsage:\n$0 [arguments]"
   echo -e " \"The note text\" -t title"
   echo -e " -c: continue writing in VS Code"
-  exit;
+  exit 1
 }
 
-if [ $# -eq 0 ]; then usage; fi
+set_filename () {
+  now=$(date "+%Y%m%d")
+  filename="$NOTES_DIRECTORY${now}.md"
+}
+
+if [ $# -eq 0 ]; then
+  if command -v termux-open; then
+    set_filename
+    echo "$filename"
+    echo "a" >> "$filename"
+    termux-open "$filename"
+    exit 0
+  fi
+  usage
+fi
 
 continue=false
 text=$1
@@ -26,13 +40,8 @@ while getopts hct: opt ${@:2}; do
   esac
 done
 
-set_filename () {
-  filename="$NOTES_DIRECTORY${now}_${title}.md"
-}
-
 if [ -z "$title" ]; then
-  now=$(date "+%Y%m%d")
-  filename="$NOTES_DIRECTORY${now}.md"
+  set_filename()
 else
   now=$(date "+%Y%m%d_%H%M")
   filename="$NOTES_DIRECTORY${now}_${title}.md"
@@ -45,6 +54,3 @@ if $continue; then
   code $NOTES_DIRECTORY $filename
 fi
 
-if command -v termux-open; then
-  termux-open "$filename"
-fi
