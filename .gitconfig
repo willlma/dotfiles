@@ -6,7 +6,7 @@
   excludesfile = ~/dotfiles/.gitignore_global
   mergeoptions = --no-edit
 [pull]
-  # rebase = true
+	rebase = true
 [push]
   default = current
 [help]
