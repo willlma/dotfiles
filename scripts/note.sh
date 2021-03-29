@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 
-#
-#
-#
-
 usage () {
   echo -e "\nUsage:\n$0 [arguments]"
-  echo -e " \"The note text\" -t title"
+  echo -e " \"The note text\" -t [title]"
   echo -e " -c: continue writing in VS Code"
   exit 1
 }
@@ -20,8 +16,8 @@ if [ $# -eq 0 ]; then
   if command -v termux-open; then
     set_filename
     echo "$filename"
-    echo "a" >> "$filename"
-    termux-open "$filename"
+    echo "- [ ] " >> "$filename"
+    am start --user 0 -n net.ia.iawriter.x/net.ia.iawriter.x.filelist.FileListActivity
     exit 0
   fi
   usage
@@ -41,7 +37,7 @@ while getopts hct: opt ${@:2}; do
 done
 
 if [ -z "$title" ]; then
-  set_filename()
+  set_filename
 else
   now=$(date "+%Y%m%d_%H%M")
   filename="$NOTES_DIRECTORY${now}_${title}.md"
@@ -53,4 +49,3 @@ echo $filename
 if $continue; then
   code $NOTES_DIRECTORY $filename
 fi
-

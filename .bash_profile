@@ -24,7 +24,7 @@ fi
 export NOTES_DIRECTORY=~/Dropbox/Notes/
 
 # update_terminal_cwd is the default command
-PROMPT_COMMAND="$PROMPT_COMMAND; if [ "$(id -u)" -ne 0 ]; then echo $(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1) >> ~/Dropbox/config/logs/bash-history-$(date "+%Y-W%V").log; fi;"
+PROMPT_COMMAND="update_terminal_cwd; source ~/dotfiles/scripts/log_history.sh"
 
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
@@ -32,6 +32,7 @@ export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/curre
 
 chmod -R u+x ~/dotfiles/scripts/
 alias branchd="~/dotfiles/scripts/branchd.sh"
+alias grc="GIT_EDITOR=true git rebase --continue"
 alias cmp="~/dotfiles/scripts/cmp.sh"
 alias note="~/dotfiles/scripts/note.sh"
 alias notes="code ~/Dropbox/Notes/"
