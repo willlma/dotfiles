@@ -32,9 +32,10 @@ export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/curre
 
 chmod -R u+x ~/dotfiles/scripts/
 alias branchd="~/dotfiles/scripts/branchd.sh"
+alias pm="~/dotfiles/scripts/pm.sh"
 alias grc="GIT_EDITOR=true git rebase --continue"
 alias cmp="~/dotfiles/scripts/cmp.sh"
-alias note="~/dotfiles/scripts/note.sh"
+alias note="~/dotfiles/scripts/note.py"
 alias notes="code ~/Dropbox/Notes/"
 alias lg="~/dotfiles/scripts/lg.sh"
 alias pomo="~/dotfiles/scripts/pomo.sh"

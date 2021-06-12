@@ -8,9 +8,9 @@ usage () {
 }
 
 firefox=false
-chrome=true
-
-while getopts sfcht: opt; do
+chrome=false
+time=25
+while getopts fcht: opt; do
   case $opt in
     h) usage;;
     f) firefox=true;;
@@ -20,30 +20,25 @@ while getopts sfcht: opt; do
   esac
 done
 
-
-
 killall Signal
 if $firefox; then
-  osascript -e 'quit app "Firefox"'
+  osascript -e 'quit app "Firefox Developer Edition"'
 fi
 if $chrome; then
-  osascript ./close-fh-tabs.scpt
+  osascript ~/dotfiles/scripts/close-fh-tabs.scpt
 fi
 
-if [ -z "$time" ]; then
-  time=1500
-else
-  time=$time*60
-fi
-
+back_at=$(date -v+${time}M +"%H:%M")
+echo -e "We'll be back online at $back_at\n"
+time=$((time*60))
 sleep $time
 
 open -a Signal
 osascript -e 'tell application "System Events" to tell process "Signal" to set visible to false'
 if $firefox; then
-  open -a Firefox
-  osascript -e 'tell application "System Events" to tell process "Firefox" to set visible to false'
+  open -a "Firefox Developer Edition"
+  osascript -e 'tell application "System Events" to tell process "Firefox Developer Edition" to set visible to false'
 fi
 if $chrome; then
-  osascript ./open-fh-tabs.scpt
+  osascript ~/dotfiles/scripts/open-fh-tabs.scpt
 fi
