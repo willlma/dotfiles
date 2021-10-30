@@ -1,1 +1,0 @@
-{"context-menu":{"atom-text-editor":[{"label":"Hard wrap selected text","command":"hard-wrap:reflow-selection"}]},"menu":[{"label":"Packages","submenu":[{"label":"hard-wrap","submenu":[{"label":"Toggle","command":"hard-wrap:reflow-selection"}]}]}]}
