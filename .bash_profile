@@ -10,9 +10,9 @@ export CLICOLOR=1
 # export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export LSCOLORS=Gxheahdhfxegedabagacad
 export EDITOR="code -w"
-# export ANDROID_HOME=~/Library/Android/sdk
-# export PATH=$ANDROID_HOME/tools:$PATH
-# export PATH=$ANDROID_HOME/platform-tools:$PATH
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
 la () {
   ls -GFha $1
 }
@@ -27,14 +27,15 @@ export NOTES_DIRECTORY=~/Dropbox/Notes/
 PROMPT_COMMAND="update_terminal_cwd; source ~/dotfiles/scripts/log_history.sh"
 
 export PYTHONSTARTUP=~/dotfiles/.pythonrc
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/current-sdk.cfg`/bin
+export PATH="/usr/local/opt/python/libexec/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export LC_ALL=en_US.UTF-8
 
 chmod -R u+x ~/dotfiles/scripts/
 alias branchd="~/dotfiles/scripts/branchd.sh"
 alias pm="~/dotfiles/scripts/pm.sh"
 alias grc="GIT_EDITOR=true git rebase --continue"
 alias cmp="~/dotfiles/scripts/cmp.sh"
+alias push="~/dotfiles/scripts/push.sh"
 alias note="~/dotfiles/scripts/note.py"
 alias notes="code ~/Dropbox/Notes/"
 alias lg="~/dotfiles/scripts/lg.sh"
@@ -44,4 +45,5 @@ alias stage="~/dotfiles/scripts/stage.sh"
 alias hg="history | grep"
 alias prune="~/dotfiles/scripts/prune.sh"
 
+# heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;

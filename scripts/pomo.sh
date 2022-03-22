@@ -22,7 +22,7 @@ done
 
 killall Signal
 if $firefox; then
-  osascript -e 'quit app "Firefox Developer Edition"'
+  osascript -e 'quit app "Firefox"'
 fi
 if $chrome; then
   osascript ~/dotfiles/scripts/close-fh-tabs.scpt
@@ -36,8 +36,8 @@ sleep $time
 open -a Signal
 osascript -e 'tell application "System Events" to tell process "Signal" to set visible to false'
 if $firefox; then
-  open -a "Firefox Developer Edition"
-  osascript -e 'tell application "System Events" to tell process "Firefox Developer Edition" to set visible to false'
+  open -a "Firefox"
+  osascript -e 'tell application "System Events" to tell process "Firefox" to set visible to false'
 fi
 if $chrome; then
   osascript ~/dotfiles/scripts/open-fh-tabs.scpt

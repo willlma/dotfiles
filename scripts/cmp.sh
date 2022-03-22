@@ -1,7 +1,8 @@
 branch=$(git rev-parse --abbrev-ref HEAD)
-if [[ $branch == "main" || $branch == "master" ]]; then
+# if [[ $branch == "main" || $branch == "master" ]]; then
+if [[ $branch == "master" ]]; then
   read -p "Sure you want to push to $branch?" -n 1 -r
-  echo # (optional) move to a new line
+  echo # move to a new line
   if [[ ! $REPLY =~ ^[Yy]$ ]]; then
       # handle exits from shell or function but don't exit interactive shell
       [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
