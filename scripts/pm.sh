@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 
-git fetch origin master:master
-git rebase master
+branch=$(git rev-parse --abbrev-ref HEAD)
+if [[ $branch == "master" ]]; then
+  git pull
+else
+  git fetch origin master:master
+  git rebase master
+fi

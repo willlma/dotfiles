@@ -1,12 +1,13 @@
 [user]
 	name = Will Marquardt
-	email = wmarquardt@gmail.com
+	email = will.marquardt@doctolib.com
+	signingkey = /Users/willlma/.ssh/id_ed25519_MACM_WK64VJJ2P4.pub
 [core]
   editor = code -w
   excludesfile = ~/dotfiles/.gitignore_global
   mergeoptions = --no-edit
 [pull]
-	rebase = true
+	rebase = false
 [push]
   default = current
 [help]
@@ -29,6 +30,7 @@
   pn = pull --no-edit
   cn = commit --no-edit
   pm = pull origin master --no-edit
+  rm = pull origin master --rebase
   dm = diff origin/master
 [branch]
 	# autoSetupMerge = always
@@ -36,3 +38,9 @@
 	enabled = true
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = True
+[gpg "ssh"]
+	allowedSignersFile = /Users/willlma/.doctolib/allowed_signers
