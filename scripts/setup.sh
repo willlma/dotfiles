@@ -1,6 +1,6 @@
 ln -s ~/dotfiles/.gitconfig ~
 chmod -R u+x ~/dotfiles/scripts/
-echo "if [ -f ~/dotfiles/.zprofile ]; then source ~/dotfiles/.zprofile; fi" >> ~/.zprofile
+echo "if [ -f ~/dotfiles/.zshrc ]; then source ~/dotfiles/.zshrc; fi" >> ~/.zshrc
 
 # Ruby
 # ln -s ~/dotfiles/.inputrc ~
