@@ -1,13 +1,12 @@
 [user]
-	name = Will Marquardt
-	email = will.marquardt@doctolib.com
-	signingkey = /Users/willlma/.ssh/id_ed25519_MACM_WK64VJJ2P4.pub
+  name = Will Marquardt
+  email = wmarquardt@gmail.com
 [core]
-  editor = code -w
+  editor = zed -w
   excludesfile = ~/dotfiles/.gitignore_global
   mergeoptions = --no-edit
 [pull]
-	rebase = false
+  rebase = false
 [push]
   default = current
 [help]
@@ -38,9 +37,3 @@
 	enabled = true
 [init]
 	defaultBranch = main
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = True
-[gpg "ssh"]
-	allowedSignersFile = /Users/willlma/.doctolib/allowed_signers

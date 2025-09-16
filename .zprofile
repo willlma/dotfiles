@@ -1,36 +1,58 @@
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+# deno
+export PATH="$HOME/.deno/bin:$PATH"
+
+# git
 alias g="git"
-: 'Removing terminal colors while I test Warp
-export TERM="xterm-color"
+. ~/dotfiles/git-prompt.sh
+zstyle ':completion:*:*:git:*' script ~/dotfiles/.git-completion.zsh
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1="\[\e[0;32m\]\w\$(__git_ps1)\[\e[0m\] "
+setopt PROMPT_SUBST
+export PROMPT="%F{green}%~%f\$(__git_ps1) "
 export CLICOLOR=1
 export LSCOLORS=Gxheahdhfxegedabagacad
-'
-export EDITOR="code -w"
-: 'Removing Android stuff
-export ANDROID_HOME=~/Library/Android/sdk
-export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
-'
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Node
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Android
+
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+
+# PG
+
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# ESP-32
+
+alias get_esprs='. $HOME/export-esp.sh'
+export PATH="/Applications/CMake.app/Contents/bin":"$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/willlma/.lmstudio/bin"
+
+# Aliases
+
 la () {
   ls -GFha $1
 }
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
-
-export NOTES_DIRECTORY=~/Dropbox/Notes/
-
-# update_terminal_cwd is the default command
-# PROMPT_COMMAND="update_terminal_cwd; source ~/dotfiles/scripts/log_history.sh"
-
-# export PYTHONSTARTUP=~/dotfiles/.pythonrc
-# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-export PATH="$HOME/.deno/bin:$PATH"
-# export LC_ALL=en_US.UTF-8
-
-chmod -R u+x ~/dotfiles/scripts/
 alias branchd="~/dotfiles/scripts/branchd.sh"
 alias pm="~/dotfiles/scripts/pm.sh"
 alias grc="GIT_EDITOR=true git rebase --continue"
